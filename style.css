@@ -112,7 +112,7 @@ section {
     text-align: right;
 }
 
-.home-content h1 {
+.home-content h2 {
     font-size: 8rem;
     font-weight: 700;
     margin-top: 1.5rem;
@@ -211,7 +211,7 @@ section {
 }
 
 .about-img img {
-    width: 25vw;
+    width: 20vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
@@ -226,8 +226,11 @@ section {
 }
 
 .about-content h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
     font-size: 7rem;
     text-align: left;
+    padding-top: 30px;
 }
 
 .about-content p {
@@ -383,8 +386,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    margin: 5rem 0;
+    /* gap: 3rem;
+    margin: 2rem 0; */
     text-align: center;
 }
 
@@ -438,6 +441,64 @@ section {
 
 #copyright {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 16px;
+}
+
+@media  (max-width:1285px ){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position:absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 5rem;
+        background: rgba(0, 0, 0, 0.8);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0 ;
+        color: var(--text-color);
+    }
+    .navbar:active {
+    display:block;
+    }
+    .gradient-btn {
+        display: none;
+    }
+    .home-content {
+        align-items: center;
+        text-align: center;
+    }
+    .home-content h2 {
+        font-size: 33px;
+    }
+    .home-content h3{
+        font-size: 25px;
+    }
+    .home-img img {
+        width: 56vw;
+
+    }
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h2 {
+        text-align: center;
+        margin: 2rem;
+    }
+    .about img {
+        width: 52vw;
+    }
+    .contact form {
+        flex-direction: column;
+    }
 }
