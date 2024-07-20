@@ -89,13 +89,20 @@ span {
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    color: white;
+    color: rgb(232, 215, 215);
     border: none;
     text-wrap: nowrap;
+    transition: 0.3S ease-in-out;
 }
 
 .gradient-btn:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color)
+                0 0 55px var(--main-color);
+}
+
+.gradient-bten {
+    display: none;
 }
 
 section {
@@ -204,7 +211,7 @@ section {
 }
 
 .btn-group a:nth-child(2):hover {
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
     background: var(--main-color);
     color: var(--bg-color);
 }
@@ -222,8 +229,9 @@ section {
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
-    /* margin-left:70px;
-    margin-top: 30px; */
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .about-img img:hover {
@@ -245,20 +253,33 @@ section {
     float: left;
     text-align: left;
     margin-right:25px;
-    /* margin-bottom: 10px; */
+    margin-bottom: 15px;
 }
 
 .skill {
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    text-align:left;
+    margin-left:5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-.item {
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
+.item{
 
+    font-size: 20px;
+    text-align:left;
+    padding-left:5px;
+    margin-right: 25px;
+    display:inline-flex;
+    transition:0.3s ease-in-out;
+}
+.item:hover{
+    transform: scale(1.1);
+
+}
+.item i {
+    text-align: left;
+    margin-right:15px;
 }
 
 ::-webkit-scrollbar {
@@ -436,9 +457,11 @@ section {
     font-size: 4rem;
     margin-bottom: 3rem;
 }
+
 .contact form textarea {
     resize: none;
 }
+
 .container-icon {
     display: flex;
 
@@ -446,10 +469,8 @@ section {
     align-items: center;
     margin-right: 20px;
     gap: 2rem;
-
-
-
 }
+
 .container-icon li {
     list-style: none;
     font-size: 2rem;
@@ -518,11 +539,11 @@ section {
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
-      }
+    }
 
       .active {
         display: block;
-      }
+    }
 
     .navbar a {
         display: block;
@@ -537,78 +558,220 @@ section {
         display: none;
     }
 
+    .social-icons a {
+        font-size: 2rem;
+    }
+
+    .btn-group a {
+        font-size:12px;
+        font-weight: 600;
+    }
 
     .home{
         flex-direction: column-reverse;
         margin: 5rem o;
         gap: 5rem;
     }
+
     .home-content {
         align-items: center;
         text-align: center;
     }
+
     .home-img img {
-        width: 56vw;
+        margin-top: 20px;
+        width: 50vw;
     }
+
     .home-content h2 {
         font-size: 33px;
     }
+
     .home-content h3{
-        font-size: 25px;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .home-content p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .services-container {
+        width: 100px;
     }
 
     .projects .heading h2 {
         font-size: 15px
     }
 
-
-
-
-
-    .contact h2 {
-        font-size:40px;
-        margin-bottom: 40px;
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        gap: 2rem;
     }
-    .contact h3 {
-        font-size: 25px;
+    
+    .service-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main-color);
+        height: 300px;
+        border-radius: 3rem;
+        cursor: pointer;
+        margin-right: 20px;
+        border: 5px solid transparent;
+        transition: 0.4s ease-in-out;
     }
+
+    .service-info p {
+        font-size: 10px;
+    }
+
+    .gradient-bten{
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: var(--main-color);
+        box-shadow: 0 0 10px var(--main-color);
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        color: white;
+        border: 2px solid transparent;
+        font-weight: 600;
+        transition: 0.3s ease-in-out;
+
+    }
+    
+    .gradient-bten:hover {
+        transform: scale(1.05);
+    }
+
+    .gradient-bten {
+        display: block;
+    }
+
     .projects h2 {
         font-size: 40px;
     }
+
     .services h2 {
         font-size: 40px;
     }
+
+    .service-info i{
+        font-size: 50px;
+    }
+
+    .service-info p{
+        font-size: 15px;
+        color: rgb(235, 235, 195);
+        font-weight: 10px;
+    }
+
+    .service-info h4 {
+        font-size: 30px;
+    }
+
     .about-content h2 {
         font-size: 40px;
     }
+
     .container-icon  {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size: 10px;
+        color: rgb(183, 179, 209);
     }
+
     .container-icon li i{
-        font-size: 15px;
+        font-size: 12px;
     }
-
-
-
-
-
 
     .about {
         flex-direction: column-reverse;
         text-align: center;
     }
+
     .about h2 {
         text-align: center;
         margin: 2rem 0;
     }
+
     .about img {
-        width: 52vw;
+        display: none;
     }
+
+    .about-content p {
+        font-size: 1.5rem;
+        text-align:left;
+        margin-right:0px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        color: rgb(164, 162, 159);
+    }
+
+    .skill {
+        text-align:center;
+        margin-left: 30px;
+    }
+
+    .item{
+        text-align: left;
+        padding-left:5px;
+        display:inline-flex;
+        margin-right: 8px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .item i {
+        margin-right:10px;
+    }
+
     .contact form {
         flex-direction: column;
     }
+
+    .projects {
+        background-color: var(--second-bg-color);
+    }
+
+    .project-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        place-items:center;
+        gap: 3rem;
+        row-gap: 5rem;
+    } 
+
+    .project-card img {
+        max-width: 150px;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+
+    .project-card h3 {
+        font-size: 3rem;
+    }
+
+    .project-card p {
+        font-size: 1rem;
+    }
+
+    .contact h2 {
+        font-size:40px;
+        margin-bottom: 40px;
+    }
+
+    .contact h3 {
+        font-size: 22px;
+    }
+
+   #copyright {
+    font-size: 1.3rem;
+   }
+
+
 }
