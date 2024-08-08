@@ -69,14 +69,17 @@
         </div>
     </section>
 
-    <selctio class="about" id="about">
+    <section class="about" id="about">
 
         <div class="about-img">
             <img src="image/profile.png" alt="about-img">
         </div>
+        <div class="abot-img">
+          
+      </div>
 
         <div class="about-content">
-            <h2> About <span>Me</span></h2>
+            <h2> About <span>Me</span> </h2>
             <p> I am a dedicated frontend developer with a passion for crafting visually stunning and 
                 user-friendly websites. With a solid foundation in HTML, CSS, and JavaScript, I create
                  responsive and interactive web experiences. My skills extend to UI/UX design, where I
@@ -85,15 +88,19 @@
                 and am committed to continuous learning to stay at the forefront of web development trends. </p>
             </p>
             <h3 class="skill"><span>Skill <i class="fa-solid fa-toolbox" style="color: #45422b;"></i></span></h3>
-
+            
+            <div class="about-skill" style="display: flex; flex-wrap: wrap;">
             <li class="item"> <i class="fa-brands fa-html5" style="color: #de6717;"> </i> HTML</li>
             <li class="item"> <i class="fa-brands fa-css3-alt" style="color: #1663df;"> </i> CSS</li>
             <li class="item"> <i class="fa-brands fa-square-js" style="color: #FFD43B;"> </i> Javascript</li>
             <li class="item"><i class="fa-brands fa-react" style="color: #74C0FC;"> </i> Recact</li>
             <li class="item"> <i class="fa-brands fa-figma" style="color: #d70f0f;"> </i> Figma</li>
             <li class="item"> <i class='bx bxl-tailwind-css' style='color:#167cdf'  > </i> Tailwind</li>
+            </div>
         </div>
-    </selctio>
+
+        
+    </section>
 
 
 
@@ -277,7 +284,7 @@
         <div class="project-box">
 
             <div class="project-card">
-                <img src="image/project.1.png" alt="">
+                <a href=""><img src="image/project.1.png" alt=""></a>
 
                 <h3>project 1</h3>
                 <p>My latest project:Image / Gallery Slider built using
@@ -357,10 +364,11 @@
             <li><i class='bx bx-home'> Kalimati, Kathmandu</i></li>
         </div>
     
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form class="form-up" action="https://api.web3forms.com/submit" method="POST">
     
             <div class="input-group">
                 <input type="hidden" name="access_key" value="510be5f6-2b10-43e4-9fb6-577a387cb773">
+                
                 <div class="input-box">
                     <input type="text" name="full_name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Email" required>

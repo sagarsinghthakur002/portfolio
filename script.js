@@ -11,3 +11,30 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 
 }
+   
+    // slider 
+
+    
+    const swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal', // Change to 'vertical' if you prefer vertical sliding
+        loop: true,
+    
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    
+        // Scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+    });
+    
