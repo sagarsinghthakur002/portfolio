@@ -652,7 +652,7 @@ section {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: greenyellow;
+    background-color: rgb(208, 212, 203);
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -667,7 +667,7 @@ section {
   
   .animated-button:hover {
     box-shadow: 0 0 0 12px transparent;
-    color: #212121;
+    color: #aea6a6;
     border-radius: 12px;
   }
   
@@ -689,7 +689,7 @@ section {
   
   .animated-button:active {
     scale: 0.95;
-    box-shadow: 0 0 0 4px greenyellow;
+    box-shadow: 0 0 0 4px rgb(222, 224, 218);
   }
   
   .animated-button:hover .circle {
